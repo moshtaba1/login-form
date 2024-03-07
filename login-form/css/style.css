@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login_page{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(22px) ;
+    width: 81%;
+    max-width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+ 
+form{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+}
+
+.login_img{
+    height: 100%;
+    background-color: #fff;
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+ 
+label{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+input{
+    border: 2px solid #fff;
+    background-color: transparent;
+    height: 45px;
+    border-radius: 50px;
+    padding-left: 20px;
+}
+
+.form_button{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_button button{
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+img{
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+}
+
+.circle_1{
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+    background-image: linear-gradient(to right, #94a3c2, #596888);
+    border-radius: 100%;
+    z-index: -1;
+    left: -15rem;
+    top: 58%;
+    transform: translateY(-38%);
+}
+
+input:focus,input:active{
+    outline: none;
+}
+
+
+@media screen and (max-width:765px) {
+    .login_img{
+        display: none;
+    }
+    form{
+        width: 100%;
+    }
+    .form_group{
+        width: 80%;
+    }
+    .form_button
+
+}
